@@ -1,0 +1,13 @@
+body {
+	background-color: black;
+}
+
+.title {
+	color: white;
+	font-family: "Playfair Display";
+	text-align: center;
+	font-size: 4rem;
+	letter-spacing: 5px;
+
+	margin: 2px;
+}
