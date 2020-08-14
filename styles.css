@@ -1,13 +1,105 @@
+:root {
+	--header-font: "Playfair Display";
+	--body-font: "Cabin";
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background-color: black;
+	font-family: var(--body-font);
+
+	color: white;
+
+	/* add dark overlay to background image */
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)),
+		url('images/BowdoinPolarBearAtDesk.jpg');
+
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+	margin: 0;
+}
+
+.sidebar-wrapper {
+	position: fixed;
+	width: 200px;
+
+	display: flex;
+	height: 100vh;
+
+	justify-content: flex-end; /* move sidebar to right side */
+	justify-items: stretch;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 50% 0; /* space between bar and top and bottom of screen */
+	border-right: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.sidebar-banner {
+	font-family: var(--body-font);
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+
+	text-align: right;
+	padding: 20px;
+
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+.sidebar-banner:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main {
+	margin-left: 200px;
+}
+
+.section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .title {
-	color: white;
-	font-family: "Playfair Display";
-	text-align: center;
-	font-size: 4rem;
+	font-family: var(--header-font);
+	font-size: 2rem;
 	letter-spacing: 5px;
 
-	margin: 2px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title__second-line {
+	margin-left: 130px;
+}
+
+.lib-arts-section {
+	background-color: rgba(255, 0, 0, 0.137);
+}
+
+.types-section {
+	background-color: rgba(255, 251, 0, 0.137);
+}
+
+.resources-section {
+	background-color: rgba(30, 255, 0, 0.137);
+}
+
+.calendar-section {
+	background-color: rgba(0, 81, 255, 0.137);
+}
+
+.team-section {
+	background-color: rgba(140, 0, 255, 0.137);
 }
