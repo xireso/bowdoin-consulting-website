@@ -17,12 +17,12 @@
 
     <div class=sidebar-wrapper>
         <div class=sidebar>
-            <a class=sidebar-banner href=#home>Home</a>
-            <a class=sidebar-banner href=#lib-arts>Liberal Arts</a>
-            <a class=sidebar-banner href=#types>Types of Consulting</a>
-            <a class=sidebar-banner href=#resources>Resources</a>
-            <a class=sidebar-banner href=#calendar>Calendar</a>
-            <a class=sidebar-banner href=#team>Meet the Team</a>
+            <a class="active sidebar-banner" id="home-nav" href=#home onclick="changeNavSelect('home')">Home</a>
+            <a class="sidebar-banner" id="lib-arts-nav" href=#lib-arts onclick="changeNavSelect('lib-arts')">Liberal Arts</a>
+            <a class="sidebar-banner types" id="types-nav" href=#types onclick="changeNavSelect('types')">Types of Consulting</a>
+            <a class="sidebar-banner resources" id="resources-nav" href=#resources onclick="changeNavSelect('resources')">Resources</a>
+            <a class="sidebar-banner calendar" id="calendar-nav" href=#calendar onclick="changeNavSelect('calendar')">Calendar</a>
+            <a class="sidebar-banner team" id="team-nav" href=#team onclick="changeNavSelect('team')">Meet the Team</a>
         </div>
     </div>
 
