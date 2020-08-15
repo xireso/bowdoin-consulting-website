@@ -18,7 +18,7 @@ window.addEventListener("scroll", function() {
     var checkElements = document.getElementsByClassName("section");
 	for (const element of checkElements) {
         //console.log('section: ', element);
-        if (window.scrollY < (element.offsetTop) + 5) {
+        if (window.scrollY < (element.offsetTop + element.offsetHeight / 1.75)) {
             console.log("in ", element.id);
             let navEelement = document.getElementById(element.id+"-nav");
             if (navEelement != lastSelection) {
