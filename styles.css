@@ -22,11 +22,19 @@ body {
 
 h1 {
 	margin: 0;
+	font-family: var(--header-font);
 }
+
+p {
+	letter-spacing: 1px;
+	line-height: 130%;
+}
+
+/* sidebar */
 
 .sidebar-wrapper {
 	position: fixed;
-	width: 200px;
+	width: 170px;
 
 	display: flex;
 	height: 100vh;
@@ -40,43 +48,46 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 50% 0; /* space between bar and top and bottom of screen */
-	border-right: 3px solid rgba(255, 255, 255, 0.8);
+	border-right: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .sidebar-banner {
 	font-family: var(--body-font);
 	font-weight: 400;
-	font-size: 1.1rem;
 	letter-spacing: 2px;
 
 	text-align: right;
-	padding: 20px;
+	padding: 15px 25px; /* space between words and light up area */
 
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
 }
 
 .sidebar-banner:hover {
-	background-color: rgba(255, 255, 255, 0.2);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.3));
 }
 
 .active {
-	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.35));
 }
+
+/* main section */
 
 .main {
-	margin-left: 200px;
+	margin-left: 170px;
 }
 
-.section {
-	height: 100vh;
+/* home page (top) */
+
+.home-section {
+	height: 91vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .title {
-	font-family: var(--header-font);
 	font-size: 2rem;
 	letter-spacing: 5px;
 
@@ -88,22 +99,63 @@ h1 {
 	margin-left: 130px;
 }
 
+/* content styles in each section */
+
+.content {
+	background: linear-gradient(rgb(196, 196, 196, 0.3), rgb(196, 196, 196, 0));
+	backdrop-filter: blur(10px);
+
+	padding: 30px 60px;
+	margin: 6%;
+}
+
+.section-title {
+	font-size: 3rem;
+	letter-spacing: 3px;
+	padding: 0;
+	margin: 0;
+}
+
+.section-subtitle {
+	letter-spacing: 2px;
+	font-weight: 200;
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+}
+
+.content__short {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.content__long {
+	font-size: 0.9rem;
+	font-weight: 200;
+}
+
+/* lib arts section specific */
+
 .lib-arts-section {
-	background-color: rgba(255, 0, 0, 0.137);
+	/* background-color: rgba(255, 0, 0, 0.137); */
+}
+
+.lib-arts-img {
+	width: 60%;
 }
 
 .types-section {
-	background-color: rgba(255, 251, 0, 0.137);
+	/* background-color: rgba(255, 251, 0, 0.137); */
 }
 
 .resources-section {
-	background-color: rgba(30, 255, 0, 0.137);
+	/* background-color: rgba(30, 255, 0, 0.137); */
 }
 
 .calendar-section {
-	background-color: rgba(0, 81, 255, 0.137);
+	/* background-color: rgba(0, 81, 255, 0.137); */
 }
 
 .team-section {
-	background-color: rgba(140, 0, 255, 0.137);
+	/* background-color: rgba(140, 0, 255, 0.137); */
 }
